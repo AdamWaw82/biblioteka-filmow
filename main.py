@@ -56,7 +56,7 @@ def main():
         import random
         random_media: Movie = random.choice(media_list)
         random_number = random.randint(0, 100)  
-        random_media.number_of_plays = random_number
+        random_media.number_of_plays += random_number
 
     def top_titles(content_type = None, count = None):
         if count is None:
